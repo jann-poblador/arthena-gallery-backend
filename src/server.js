@@ -3,7 +3,7 @@ import cors from 'cors'
 
 const app = express()
 
-const port = 3005 //process.env.PORT || 
+const port = process.env.PORT || 3005 //process.env.PORT || 
 
 app.use(express.urlencoded({ extended: true} ))
 app.use(express.json())
